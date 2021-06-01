@@ -15,7 +15,7 @@ Where:
 <Description> – Textual description of the migration. The description needs to be separated from the version numbers with a double underscore.
 Example: `V1_1_0__my_first_migration.sql` 
 
-Then run
+On starting up, Spring boot will run `data.sql` but not flyway migration. Then run
 ```
 mvn clean flyway:migrate -Dflyway.configFile=flyway.properties
 ```
